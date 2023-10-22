@@ -1,51 +1,65 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Kelvin Kofi Doe - Portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aduful Lennox Developer portfolio">
+  <meta name="robots" content="travel,follow">
+  <title>Aduful Lennox - Portfolio</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/K.svg">
 </head>
 <body>
-    <header>
-        <h1>Kelvin Kofi Doe</h1>
-        <p>I make software.</p>
-    </header>
-    <nav>
+  <main>
+    <section class="main-content">
+      <div class="wrapper">
+        <h1 id="logo-text">Lennox<span>_</span></h1>
+        <p>I develop software.</p>
         <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About Me</a></li>
         </ul>
-    </nav>
+        <div class="image-links">
+            <a href="https://github.com/lennyylecnnox"><i class="fab fa-github"></i> </a> 
+            <a href="https://twitter.com/lennvx"><i class="fab fa-twitter"></i> </a>
+            <a href="https://www.linkedin.com/in/lennox-aduful-768b5a1b9/"><i class="fab fa-linkedin"></i> </a>
+        </div>
+      </div>
+    </section>
     <section id="about">
-        <h2>About Me</h2>
-        <p>My name is Kelvin Kofi Doe. I'm a Software Engineer specializing in Python and Rust. I also have experience in JavaScript, C, and C++.</p>
-        <p>Connect with me on: <a href="https://github.com/yourgithub">Github</a>, <a href="https://twitter.com/yourtwitter">Twitter</a>, <a href="https://linkedin.com/in/yourlinkedin">LinkedIn</a></p>
+      <div class="textonly">
+        <h2 class="small-text">My name is</h2>
+        <h3 class="big-text">Aduful Lennox</h3>
+        <p>I'm a Software Engineer specializing in Dart and Python.
+        </p>
+      </div>
+      <div id="skills">
+        <div class="main"><h4>Skills</h4></div>
+        <div class="other">
+          <h4>Languages</h4>
+          <p>Dart</p>
+          <p>Python</p>
+          <p>C</p>
+          <p>HTML</p>
+          <p>CSS/SASS</p>
+          <p>JavaScript</p>
+          <p>SQL</p> 
+        </div>
+        <div class="other">
+          <h4>Frameworks</h4>
+          <p>Flutter</p>      
+          <p>Django</p>      
+        </div>
+        <div class="other">
+          <h4>Tools</h4>
+          <p>Powershell &amp; CMD</p>  
+        </div>
+      </div>
     </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <h3>Languages</h3>
-        <ul>
-            <li>Rust</li>
-            <li>Python</li>
-            <li>C</li>
-            <li>JavaScript</li>
-            <li>C++</li>
-            <li>HTML</li>
-            <li>CSS/SASS</li>
-            <li>SQL</li>
-        </ul>
-        <h3>Frameworks</h3>
-        <ul>
-            <li>Flask</li>
-            <li>Actix Web</li>
-        </ul>
-        <h3>Tools</h3>
-        <ul>
-            <li>Postman</li>
-            <li>Powershell & CMD</li>
-            <li>Gunicorn</li>
-        </ul>
-    </section>
+  </main>
 </body>
 </html>

@@ -1,0 +1,290 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+head {
+    display: none;
+}
+
+title {
+    display: none;
+}
+
+link {
+    display: none;
+}
+
+body{
+    color: white;
+    background: black;
+    display: block;
+    margin: 8px;
+    font-family: Arial, sans-serif;
+}
+
+:root {
+    view-transition-name: root;
+}
+
+html{
+    display: block;
+}
+
+.wrapper {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+
+div {
+    display: block;
+}
+
+.main-content {
+    min-height: 100vh;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+#logo-text {
+    color: blue;
+    font-size: 3.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: -15px;
+
+}
+
+.wrapper p {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.wrapper * {
+    margin-bottom: 2rem;
+}
+
+:-webkit-any(article, aside, nav, section) h1 {
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+@keyframes blink
+{
+    0% {
+    opacity: 0;
+}
+100%{
+    opacity: 100;
+}
+}
+
+#logo-text span {
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal;
+    animation: 0.8s ease-in-out 0s infinite alternate none running blink;
+}
+
+.wrapper ul {
+    list-style: none;
+    margin-left: 0; 
+    padding-left: 0; 
+}
+
+.wrapper ul li a {
+    color: white;
+    text-decoration: none; 
+    transition: color 0.3s; 
+}
+  
+.wrapper ul li a:hover {
+color: blue;
+}
+  
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.image-links * {
+    margin-right: 0.7rem;
+}
+
+.image-links a i {
+    color: white;
+    font-size: 24px;
+}
+
+.wrapper .image-links a i:hover {
+color: blue;
+}
+  
+.wrapper * {
+    margin-bottom: 2rem;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: all 0s ease-in-out 0s;
+}
+
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+
+#about {
+    min-height: 100vh;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    padding-top: 2rem;
+}
+
+#about div {
+    padding-bottom: 6rem;
+}
+
+.small-text {
+    font-size: 1.5rem;
+    color: blue;
+    margin-bottom: -25px;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.big-text {
+    font-size: 2rem;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.5rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#about div {
+    padding-bottom: 6rem;
+}
+
+@media screen and (max-width: 740px)
+{
+    #skills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    margin-left: 0px;
+}
+}
+
+#skills {
+    display: flex;
+    width: 60%;
+    margin-left: 5rem;
+}
+
+#skills .other p {
+    margin-bottom: -15px;
+  }
+
+@media screen and (max-width: 740px)
+{
+    #skills div {
+    margin-bottom: 0.1rem;
+}
+}
+
+#skills div {
+    margin-right: 2rem;
+}
+
+#about div {
+    padding-bottom: 6rem;
+}
+
+.main {
+    color: blue;
+}
+
+#skills h4 {
+    font-size: 1.6rem;
+    margin-bottom: 0.6rem;
+}
+
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+#skills p {
+    font-size: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+}  
