@@ -15,12 +15,16 @@ link {
     display: none;
 }
 
-body{
+
+body {
+    background-image: url('background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: white;
-    background: black;
+    font-family: Arial, sans-serif;
     display: block;
     margin: 8px;
-    font-family: Arial, sans-serif;
 }
 
 :root {
