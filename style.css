@@ -1,3 +1,17 @@
+/* Style the favicon */
+#favicon {
+    font-family: Arial, sans-serif; /* Specify the font-family */
+    font-size: 16px; /* Adjust the font size */
+    width: 16px; /* Adjust the width */
+    height: 16px; /* Adjust the height */
+    text-align: center; /* Center the text horizontally */
+    line-height: 16px; /* Center the text vertically */
+    background-color: #007bff; /* Set the background color */
+    color: #fff; /* Set the text color */
+    border-radius: 50%; /* Create a circular shape */
+    display: inline-block; /* Make it a block element */
+  }
+  
 * {
     margin: 0px;
     padding: 0px;
@@ -25,6 +39,54 @@ body {
     font-family: Arial, sans-serif;
     display: block;
     margin: 8px;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.5rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 :root {
@@ -80,16 +142,6 @@ div {
     margin-block-end: 0.83em;
 }
 
-h1 {
-    display: block;
-    font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-
 @keyframes blink
 {
     0% {
@@ -113,13 +165,13 @@ h1 {
     padding-left: 0; 
 }
 
-.wrapper ul li a {
+.wrapper ul  a {
     color: white;
     text-decoration: none; 
     transition: color 0.3s; 
 }
   
-.wrapper ul li a:hover {
+.wrapper ul  a:hover {
 color: blue;
 }
   
@@ -137,7 +189,9 @@ li {
     display: list-item;
     text-align: -webkit-match-parent;
 }
-
+.page-links * {
+    margin-right: 0.7rem;
+}
 .image-links * {
     margin-right: 0.7rem;
 }
@@ -170,8 +224,6 @@ a {
     text-decoration: none;
     transition: all 0s ease-in-out 0s;
 }
-
-
 a:-webkit-any-link {
     color: -webkit-link;
     cursor: pointer;
@@ -187,54 +239,43 @@ a:-webkit-any-link {
     margin-left: auto;
     padding-top: 2rem;
 }
-
 #about div {
     padding-bottom: 6rem;
 }
-
 .small-text {
     font-size: 1.5rem;
-    color: blue;
+    color: fuchsia;
     margin-bottom: -25px;
 }
-
-h2 {
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-
 .big-text {
     font-size: 2rem;
 }
-
-h3 {
-    display: block;
-    font-size: 1.17em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+.textonly p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
 }
 
-p {
-    font-size: 1.5rem;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+.main {
+    color: blue;
 }
 
-#about div {
-    padding-bottom: 6rem;
-}
 
+#skills {
+    display: flex;
+    width: 60%;
+    margin-left: 5rem;
+}
+#skills div {
+    margin-right: 2rem;
+}
+#skills h4 {
+    font-size: 1.6rem;
+    margin-bottom: 0.6rem;
+}
+#skills p {
+    font-size: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+}  
 @media screen and (max-width: 740px)
 {
     #skills {
@@ -242,53 +283,65 @@ p {
     -webkit-box-direction: normal;
     flex-direction: column;
     margin-left: 0px;
+    }
 }
-}
-
-#skills {
-    display: flex;
-    width: 60%;
-    margin-left: 5rem;
-}
-
-#skills .other p {
-    margin-bottom: -15px;
-  }
-
 @media screen and (max-width: 740px)
 {
     #skills div {
     margin-bottom: 0.1rem;
+    }
 }
+#skills .other p {
+    margin-bottom: -15px;
 }
 
-#skills div {
-    margin-right: 2rem;
-}
 
-#about div {
+
+#projects {
+    min-height: 100vh;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    padding-top: 2rem;
+}
+#projects div {
     padding-bottom: 6rem;
 }
-
-.main {
-    color: blue;
+#instance {
+    display: flex;
+    width: 60%;
+    margin-left: 5rem;
 }
-
-#skills h4 {
+#instance div {
+    margin-right: 2rem;
+}
+#instance h4 {
     font-size: 1.6rem;
     margin-bottom: 0.6rem;
 }
-
-h4 {
-    display: block;
-    margin-block-start: 1.33em;
-    margin-block-end: 1.33em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-
-#skills p {
+#instance  p{
+    color: white;
     font-size: 1rem;
     font-family: 'Josefin Sans', sans-serif;
-}  
+}
+#instance .other p {
+    margin-bottom: -15px;
+}
+@media screen and (max-width: 740px)
+{
+    #instance {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    margin-left: 0px;
+    }
+}
+@media screen and (max-width: 740px)
+{
+    #instance div {
+    margin-bottom: 0.1rem;
+    }
+}
